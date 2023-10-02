@@ -23,10 +23,12 @@ docker-compose up -d
 
 2 - Aguarde um tempo até que o banco de dados esteja operacional.
 
-3 - Em seguida, execute o comando do scrapy para executar o Spider, fazer a varredura do feed e persistir os dados no banco.
+3 - Crie um arquivo chamado '.env' no diretório g1feed e adicione os valores das variáveis de ambiente do banco de dados conforme o arquivo '.env.example'
+
+4 - Em seguida, execute o comando do scrapy para executar o Spider, fazer a varredura do feed e persistir os dados no banco.
 
 ```commandline
 scrapy runspider g1feed/spiders/G1FeedSpider.py
 ```
 
-4 - Acesse o banco de dados via Mongo Express ou qualquer outro cliente de sua escolha e valide os dados que foram persistidos.
+5 - Acesse o banco de dados via Mongo Express ou qualquer outro cliente de sua escolha e valide os dados que foram persistidos.
